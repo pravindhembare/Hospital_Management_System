@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div height=110px>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <table width="1510px">
+                <tr>
+                    <td width="193px">
+                        <img alt src="Pictures/logo.jpg" 
+                            style="height: 110px; width: 186px; margin-left: 0px; margin-top: 0px;" /></td>
+                    <td width="812px">
+                        <img alt src="Pictures/images%20(1).jpg" 
+                            style="height: 98px; width: 428px; margin-left: 0px; margin-top: 0px" /><img alt 
+                            src="Pictures/images.jpg" /></td>
+                    <td width="510px">
+                        <img alt src="http://localhost:53373/Project/Pictures/Screenshot%20(38).png" /></td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+             <table style="width: 1500px"> 
+        <tr>
+        <td width="1500px">
+        </td>
+        <td>        
+            <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Orientation="Horizontal" 
+                RenderingMode="Table" width="951px" Height="36px" Font-Size="Large" 
+                ForeColor="#3366CC">
+               
+                <DynamicHoverStyle ForeColor="#003300" />
+                <DynamicMenuStyle HorizontalPadding="60px" />
+               
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Specialitie" Value="Specialitie">
+                        <asp:MenuItem Text="Neurosurgery" Value="Neurosurgery" NavigateUrl="Neurosurgery.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Neurology" Value="Neurology" NavigateUrl="Neurology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Heamatology" Value="Heamatology" NavigateUrl="Heamatology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Cordiology" Value="Cordiology" NavigateUrl="Cordiology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Orthopaedic" Value="Orthopaedic" NavigateUrl="Orthopaedic.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Oncology" Value="Oncology" NavigateUrl="Oncology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Endocrinology" Value="Endocrinology" NavigateUrl="Endocrinology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Gastroenterology" Value="Gastroenterology" NavigateUrl="Gastroenterology.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="General Surgery" Value="General Surgery" NavigateUrl="General Surgery.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Dentistry" Value="Dentistry" NavigateUrl="Dentistry.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Organ Transplants" Value="Organ Transplants" NavigateUrl="Organ Transplants.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Urology" Value="Urology" NavigateUrl="Urology.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Media" Value="Media" NavigateUrl="Media.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Doctors" Value="Doctors" NavigateUrl="Doctors.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="About US" Value="About US" NavigateUrl="About US.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact US" Value="Contact US" NavigateUrl="Contact US.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Log In" Value="Log In" NavigateUrl="Log In.aspx">
+                    </asp:MenuItem>
+                </Items>       
+                <StaticHoverStyle ForeColor="Black" />
+                <StaticMenuItemStyle HorizontalPadding="60px" />
+            </asp:Menu>
+           </td>
+           </tr>
+           </table>
+           </asp:ContentPlaceHolder><br />
+           <table><tr><td>
+               <div style="width: 300px; height: 500px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder5" runat="server">
+      
+            <asp:Menu ID="Menu2" runat="server" Font-Bold="True" RenderingMode="Table" 
+                width="16px" Height="127px" Font-Size="Medium" 
+                ForeColor="Black">
+                <Items>
+                    <asp:MenuItem Text="Book An Appointment" Value="Book An Appointment" NavigateUrl="Appointment.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="View Report File" Value="View Appointment Status" NavigateUrl="P Appointment.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Contact To Doctors" Value="Contact To Doctors" NavigateUrl="P Contact.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="Change Password.aspx"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle ForeColor="#FF5050" />
+                <StaticMenuItemStyle HorizontalPadding="40px" VerticalPadding="10px" />
+            </asp:Menu>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" 
+                runat="server" Text="Log Out" BackColor="White" 
+                    BorderStyle="None" Font-Bold="True" Font-Size="15px" ForeColor="Black" 
+                onclick="Button1_Click"></asp:Button>
+            <img src="Pictures/download%20(1).jpg" height="335px"/>
+        </asp:ContentPlaceHolder>
+    </div></td>
+   <td><div style="width: 800px; height: 515px; overflow: auto;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+ 
+        </asp:ContentPlaceHolder>
+    </div></td>
+    <td><div>
+    <img height="515px" width="400px" src="Pictures/images%20(4).jpg" /></div></td>
+     </tr></table>
+    <div style="background-color: #000000; width: 1525px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+        
+            <p style="color: #FFFFFF">
+                &nbsp;&nbsp;&nbsp; Copyright 2021, All Right Reserved with SahyadriHospital, Pune | 
+                privacy Policy | Medical Disclaimer | Sitemap&nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
